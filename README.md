@@ -10,7 +10,7 @@ ember install ember-imgur
 
 ## How to use it
 
-Setup your Client-ID in the `config/environmentjs` file of your project.
+Setup your Client-ID in the `config/environment.js` file of your project.
 
 ```javascript
 var ENV = {
