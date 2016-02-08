@@ -1,3 +1,19 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Ember-imgur</h2>
 
-{{outlet}}
+<h3>Post an image</h3>
+
+<div class="image-post">
+    <label for="image-post">Upload an image</label><br>
+    <input type="file" id="image-post"><br>
+    <button type="button" {{action "imagePost"}}>Submit</button>
+    <div class="image-post-result">{{{imagePostResult}}}</div>
+</div>
+
+<h3>Get an image</h3>
+
+<div class="image-get">
+    <label for="image-get">Image ID</label><br>
+    {{input type="text" value=imageGetValue}}<br>
+    <button type="button" {{action "imageGet"}}>Submit</button>
+    <div class="image-get-result">{{{imageGetResult}}}</div>
+</div>

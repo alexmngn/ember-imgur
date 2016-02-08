@@ -1,7 +1,7 @@
 {
   "name": "ember-imgur",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "Service allowing your to upload and get images from Imgur using EmberJS",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,14 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexmngn/ember-imgur"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Alexis Mangin",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -38,12 +41,22 @@
     "ember-try": "~0.0.8"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember",
+    "ember-cli",
+    "imgur"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.5"
+    "ember-cli-babel": "^5.1.5",
+    "ember-get-config": "0.0.2"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
-  }
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://alexmngn.github.io/ember-imgur"
+  },
+  "homepage": "https://github.com/alexmngn/ember-imgur",
+  "bugs": {
+    "url": "https://github.com/alexmngn/ember-imgur/issues"
+  },
+  "main": "index.js"
 }
