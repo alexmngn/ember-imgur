@@ -12,7 +12,7 @@ ember install ember-imgur
 
 Setup your Client-ID in the `config/environmentjs` file of your project.
 
-```
+```javascript
 var ENV = {
     imgur: {
       clientId: 'YOUR_ID'
@@ -22,7 +22,7 @@ var ENV = {
 
 Then, simply inject the service in your controller or anything else.
 
-```
+```javascript
 export default Ember.Controller.extend({
 	imgur: Ember.inject.service()
 });
@@ -33,7 +33,7 @@ export default Ember.Controller.extend({
 
 `imageData` is the base64 representation of the image. It shouldn't include the `data:image/png;base64,` prefix. You can also pass an URL.
 
-```
+```javascript
 this.get('imgur').imagePost(imageData).then((result) => {
 	//Result from imgur
 }).catch((result) => {
@@ -43,7 +43,7 @@ this.get('imgur').imagePost(imageData).then((result) => {
 
 ### Get an image
 
-```
+```javascript
 this.get('imgur').imageGet(imageId).then((result) => {
 	//Result from imgur
 }).catch((result) => {
